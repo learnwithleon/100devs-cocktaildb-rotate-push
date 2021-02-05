@@ -1,0 +1,82 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.container div {
+  /* border: 1px #ccc solid; */
+  padding: 10px;
+}
+.box-1 {
+  flex: 1;
+  /* order: ; */
+  flex-basis: 100px;
+}
+.box-2 {
+  flex: 1;
+}
+.box-3 {
+  flex: 2;
+}
+.box-4 {
+  flex: 1;
+}
+
+p {
+  width: 300px;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+.hide {
+  visibility: hidden;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
