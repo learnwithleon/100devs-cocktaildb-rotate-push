@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  
+}
+
+.single-image{
+  min-width:500px;
+  min-height: 500px;
+  max-width: 500px;
+  max-height: 500px;
+  background: url("https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80") center;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:first baseline;
+  align-items: center;
+}
+
+.overlay:hover{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.55)
+}
+
+.overlay h2, .overlay p, .overlay ul{
+  display: none;
+  max-width: 80%;
+  margin: 2rem auto;
+  text-align: justify;
+}
+
+.overlay h2{
+  font-size: 1.25rem;
+}
+
+.overlay:hover h2,.overlay:hover p, .overlay:hover ul{
+  display: inline;
+  color: #fff;
+}
+
+/* #image1{
+  background: url("https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80") center; 
+  width: 500px;
+  height: 500px;
+}
+
+#image2{
+  background: url("https://images.unsplash.com/photo-1599394022918-6c2776530abb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1458&q=80") center;
+  width: 500px;
+  height: 500px;
+} */
+
+.carousel{
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+  height: 530px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.image-container{
+  display:flex;
+  /*translateX is -500px per image calculated by the length of the data from the API */
+  transform: translateX(0px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  background-color: rebeccapurple;
+  color: #fff;
+  border:none;
+  padding: 0.5rem;
+  cursor:pointer;
+  width:32.5%;
+}
+
+form{
+  padding: 1rem;
+}
+
+form button{
+  width: 30%;
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+button:focus{
+  outline: none;
+}
+
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
