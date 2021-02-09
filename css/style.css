@@ -1,0 +1,88 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  text-align: center;
+  background-color: rgba(117, 211, 167, 0.897);
+  margin: 3rem;
+  font-family: "Handlee", cursive;
+}
+
+img {
+  display: block;
+  margin: 2rem auto;
+  border-radius: 20px;
+  width: 30vw;
+  height: 30vw;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4), 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1 {
+  font-size: 3rem;
+  color: rgb(75, 123, 124);
+  text-shadow: 1px 2px 1px aqua;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 2px rgba(117, 211, 167, 0.897);
+  letter-spacing: 4.6px;
+}
+
+h3 {
+  margin: 1em 4em;
+  font-size: 1.8em;
+}
+
+.drinkResults {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: none;
+  background-color: rgb(25, 73, 62);
+
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  color: white;
+  width: 40vw;
+  height: 50vw;
+  margin: 2.5em;
+  padding: 1em 2.5em;
+  border-radius: 10px;
+}
+
+.active {
+  display: block;
+}
+
+input {
+  width: 18vw;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 1px solid rgb(25, 73, 62);
+}
+
+button {
+  width: fit-content;
+  padding: 0.5rem;
+  background-color: rgb(51, 131, 119);
+  color: rgb(171, 243, 243);
+  text-shadow: 1px 1px 1px rgba(117, 211, 167, 0.747);
+  border-radius: 5px;
+}
