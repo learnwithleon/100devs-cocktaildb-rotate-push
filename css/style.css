@@ -1,0 +1,53 @@
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+img {
+	width: 100%;
+}
+
+img, section {
+	padding: 15px;
+}
+
+h4 {
+	display: flex;
+	align-items: center;
+}
+
+.arrows{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media screen and (max-width: 800px) {
+	.content {
+		grid-template-columns: 100%;
+	}
+
+	.img {
+		max-height: 50px;
+	}
+}
