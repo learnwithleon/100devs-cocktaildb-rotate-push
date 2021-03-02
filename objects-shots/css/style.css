@@ -1,0 +1,36 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url("https://wallpaperaccess.com/full/1886850.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 10%;
+}
+
+button {
+  width: 10%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
