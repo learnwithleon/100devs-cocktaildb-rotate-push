@@ -131,7 +131,7 @@ body {
 .prev {
   color: #444;
   position: absolute;
-  top: 200px;
+  top: 225px;
   padding: 1em 2em;
   cursor: pointer;
   background: #ccc;
@@ -146,7 +146,7 @@ body {
 }
 .next:active,
 .prev:active {
-  top: 204px;
+  top: 229px;
   box-shadow: 0 1px 0 #999;
 }
 .next {
